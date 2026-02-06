@@ -1,0 +1,101 @@
+/* Basic Reset & Container */
+:host {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  width: 400px;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Form */
+.add-todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List Styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Completed State Logic */
+.completed label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.stats {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #aaa;
+  margin-top: 20px;
+}
